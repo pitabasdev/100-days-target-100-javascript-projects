@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/fc33bdc8f2.js" crossorigin="anonymous"></script>
+    <title>Copy/Text</title>
+</head>
+
+<body>
+    <input type="text" id="copy" readonly />
+    <button onclick="copy()">
+        <i class="fas fa-copy"></i>
+    </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let x = Math.random() * 100;
+            let copyInput = document.getElementById('copy');
+            copyInput.value = x.toFixed(2); // Display the random number with two decimal places
+            console.log(x);
+
+            function copy() {
+                copyInput.select();
+                document.execCommand("copy");
+                alert("Copied to clipboard!");
+            }
+        });
+    </script>
+</body>
+
+</html>
