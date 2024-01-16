@@ -1,0 +1,17 @@
+#display-location{
+    align-items: center;
+    border:1px solid black;
+    padding: 30px;
+    width: 20vh;
+
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
