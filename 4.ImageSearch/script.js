@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     async function searchPhotos(term) {
-        photo.innerHTML = ""
+        photo.innerHTML = "";
 
-        const link = `https://api.pexels.com/v1/search?query=${term}&per_page=9`
+        const link = `https://api.pexels.com/v1/search?query=${term}&per_page=20`
 
         const response = await fetch(link, {
             method: 'GET',
@@ -23,8 +23,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 Authorization: key
             }
         })
-        const data=await response.json();
-        
-        console.log(data);
+        const data = await response.json();
+
+        console.log(data.photos);
+        data.photos.forEach(imageData => {
+            const image = document.createElement('img');
+            image.classList.add('jsphoto');
+            image.src = imageData.src.large;
+            photo.appendChild(image);
+        });
     }
 });
