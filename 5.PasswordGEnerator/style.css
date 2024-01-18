@@ -1,0 +1,20 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.password{
+    border: 1px solid black;
+    height: 50px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+}
+button{
+    border: none;
+    color: white;
+    background-color: blueviolet;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
