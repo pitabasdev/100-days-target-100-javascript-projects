@@ -1,0 +1,25 @@
+*{
+    background-color: cadetblue;
+}
+input{
+    display: block;
+    margin-top: 1.2rem;
+    position: relative;
+    left: 40%;
+    border: none;
+    height: 50px;
+    width: 400px;
+    border: 1px dotted black;
+    padding-left: 10px;
+}
+button{
+    margin-top: 1.4rem;
+    position: relative;
+    left: 40.4%;
+    border: none;
+    height: 50px;
+    width: 400px;
+    font-size: larger;
+    background-color: blueviolet;
+    color: white;
+}
