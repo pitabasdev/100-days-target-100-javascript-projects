@@ -6,6 +6,16 @@ function weather() {
         .then((data) => {
 
             let locationKey = data[0].Key
-            console.log()
+            return fetch(`http://dataservice.accuweather.com/currentconditions/v1/${locationKey}?apikey=${key}`);
+
         })
+        .then(response => response.json())
+        .then((data) => {
+            let temperature = data[0].Temperature.Metric.Value;
+            console.log(`Current Temperature: ${temperature}°C`);
+        })
+        .catch(error => {
+            console.error('Error fetching weather data:', error);
+        });
 }
+
