@@ -1,19 +1,34 @@
-const url = 'https://coolguruji-youtube-to-mp3-download-v1.p.rapidapi.com/?id=lF-jPBnZ098';
-const options = {
-    method: 'GET',
-    headers: {
-        'X-RapidAPI-Key': 'ecaea926fbmshb52c382046f917ap1d97bajsna64fcdf773a6',
-        'X-RapidAPI-Host': 'coolguruji-youtube-to-mp3-download-v1.p.rapidapi.com'
-    }
-};
-async function video() {
-    try {
-        const response = await fetch(url, options);
-        const result = await response.text();
-        console.log(result);
-    } catch (error) {
-        console.error(error);
-    }
-}
+let sendButton = document.getElementById('send');
+let resetButton = document.getElementById('reset');
+let form = document.getElementById('form');
 
-video()
+
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+})
+
+resetButton.addEventListener('click', function () {
+    let name = document.getElementById('name');
+    let email = document.getElementById('email');
+    let message = document.getElementById('message');
+
+    name.value = '';
+    email.value = '';
+    message.value = '';
+})
+
+sendButton.addEventListener('click', function (e) {
+    let name = document.getElementById('name');
+    let email = document.getElementById('email');
+    let message = document.getElementById('message');
+
+    name = name.value;
+    localStorage.setItem('name', name);
+
+    email = email.value;
+    localStorage.setItem('email', email);
+
+    message = message.value;
+    localStorage.setItem('message', message);
+
+})
