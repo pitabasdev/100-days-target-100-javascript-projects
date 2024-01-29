@@ -5,9 +5,13 @@ function search() {
 
         .then(response => response.json())
         .then((data) => {
+            data.meals.forEach((meal) => {
+                console.log(meal)
+            })
 
-            console.log(data.meals);
         })
+
+
         .catch((err) => {
             alert("Error");
         })
