@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compound Interest Calculator</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Compound Interest Calculator</title>
+	</head>
+	<body>
+		<input
+			class="form-control"
+			type="text"
+			id="principal"
+			placeholder="Amount"
+		/>
+
+		<label class="form-group">Interest rate (%)</label>
+		<input
+			class="form-control"
+			type="text"
+			id="annual-interest-rate"
+			placeholder="Rate in %"
+		/>
+
+		<label class="form-group">Number of Years</label>
+		<input
+			class="form-control"
+			type="text"
+			id="number-of-year"
+			placeholder="Years"
+		/>
+
+		<label class="form-group">Number of Times in a Single Year </label>
+		<input
+			class="form-control"
+			type="text"
+			id="number-of-times-in-year"
+			placeholder="Times in Year"
+		/>
+
+		<button id="btn" class="btn btn-block btn-info" type="button">
+			Calculate
+		</button>
+	</body>
 </html>
