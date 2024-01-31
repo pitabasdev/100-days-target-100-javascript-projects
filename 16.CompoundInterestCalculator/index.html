@@ -4,44 +4,45 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Compound Interest Calculator</title>
-        <script src="script.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<script defer src="script.js"></script>
 	</head>
 	<body>
-        <label class="form-group">Amount</label>
-		<input
-			class="form-amount"
-			type="text"
-			id="principal"
-			placeholder="Amount"
-		/>
-        <br><br>
-		<label class="form-group">Interest rate (%)</label>
-		<input
-			class="form-interest"
-			type="text"
-			id="annual-interest-rate"
-			placeholder="Rate in %"
-		/><br><br><br>
+		<div class="container">
+			<label class="form-group">Amount</label>
+			<input
+				class="form-amount"
+				type="text"
+				id="principal"
+				placeholder="Amount"
+			/><br /><br />
 
-		<label class="form-group">Number of Years</label>
-		<input
-			class="form-control"
-			type="text"
-			id="years"
-			placeholder="Years"
-		/><br><br><br>
+			<label class="form-group">Interest rate (%)</label>
+			<input
+				class="form-interest"
+				type="text"
+				id="annual-interest-rate"
+				placeholder="Rate in %"
+			/><br /><br />
 
-		<label class="form-group">Number of Times in a Single Year </label>
-		<input
-			class="form-control"
-			type="text"
-			id="nomtime"
-			placeholder="Times in Year"
-		/><br><br>
+			<label class="form-group">Number of Years</label>
+			<input
+				class="form-control"
+				type="text"
+				id="years"
+				placeholder="Years"
+			/><br /><br />
 
-		<button id="btn" onclick="Calculate()">
-			Calculate
-		</button>
-        <div class="result"></div>
+			<label class="form-group">Number of Times in a Single Year </label>
+			<input
+				class="form-control"
+				type="text"
+				id="nomtime"
+				placeholder="Times in Year"
+			/><br /><br />
+
+			<button id="btn" onclick="Calculate()">Calculate</button>
+			<div class="result"></div>
+		</div>
 	</body>
 </html>
