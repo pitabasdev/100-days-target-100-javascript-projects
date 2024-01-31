@@ -4,22 +4,24 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Compound Interest Calculator</title>
+        <script src="script.js"></script>
 	</head>
 	<body>
+        <label class="form-group">Amount</label>
 		<input
 			class="form-control"
 			type="text"
 			id="principal"
 			placeholder="Amount"
 		/>
-
+        <br><br>
 		<label class="form-group">Interest rate (%)</label>
 		<input
 			class="form-control"
 			type="text"
 			id="annual-interest-rate"
 			placeholder="Rate in %"
-		/>
+		/><br><br><br>
 
 		<label class="form-group">Number of Years</label>
 		<input
@@ -27,7 +29,7 @@
 			type="text"
 			id="number-of-year"
 			placeholder="Years"
-		/>
+		/><br><br><br>
 
 		<label class="form-group">Number of Times in a Single Year </label>
 		<input
@@ -35,7 +37,7 @@
 			type="text"
 			id="number-of-times-in-year"
 			placeholder="Times in Year"
-		/>
+		/><br><br>
 
 		<button id="btn" onclick="Calculate()">
 			Calculate
