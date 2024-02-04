@@ -19,7 +19,7 @@ const fetchUser = (user_name) => {
             if (jsonData.message == "Not found") {
                 alert("User Not Found");
                 return;
-                // console.log("Error" + jsonData.message);
+
             } else {
                 userImg.innerHTML = `
             <img src="${jsonData.avatar_url}" alt="avatar" id="prof-img">
