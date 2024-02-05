@@ -6,3 +6,6 @@ function Increment() {
 function Decrement() {
     val--
 }
+function Update() {
+    num.innerHTML = val
+}
